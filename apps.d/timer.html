@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="center">
+        <input type="time" id="time" step="1"><br><br>
+        <button id="submit" onclick="submit()">Start</button>
+    </div>
+</body>
+<link rel="stylesheet" href="style.css">
+<script>
+time = document.getElementById("time")
+function submit() {
+    min = time.value.split(":")[1];
+    sec = time.value.split(":")[2];
+    hrs = time.value.split(":")[0];
+    document.getElementById("submit").innerHTML = "Running";
+    document.getElementById("submit").setAttribute("disabled","true");
+    setTimeout(() => {
+        alert("Time Over :)");
+        document.getElementById("submit").innerHTML = "Start";
+        document.getElementById("submit").setAttribute("disabled","false");
+    }, 1000*(Number(min) * 3600 + Number(min) * 60 + Number(sec)));
+}
+</script>
+</html>

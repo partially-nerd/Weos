@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Weos | Desktop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class='windows'>
+            <div class="texts">
+                <span class="quote"></span><br>
+                <hr>
+                <span class="time"></span>
+            </div>
+        </div>
+        <div class='taskbar'>
+            <button class="launcher-btn" onclick="openPopUp()">⊞</button>
+        </div>
+    </div>
+    <div class="launcher">
+        <button class="launcher-item" data-h="300" data-w="340" data-title="Console" data-url="apps.d/console.html">Console</button>
+        <button class="launcher-item" data-h="600" data-w="740" data-title="Google" data-url="https://www.google.com/">Google</button>
+        <button class="launcher-item" data-h="600" data-w="740" data-title="Discord" data-url="https://www.discord.com/app/">Discord</button>
+        <button class="launcher-item" data-h="600" data-w="740" data-title="Youtube" data-url="https://www.youtube.com/">Youtube</button>
+        <button class="launcher-item" data-h="600" data-w="740" data-title="Word" data-url="https://docs.google.com/document">Word</button>
+        <button class="launcher-item" data-h="300" data-w="380" data-title="Timer" data-url="apps.d/timer.html">Timer</button>
+        <button class="launcher-item" data-h="600" data-w="740" data-title="Messenger" data-url="https://www.messenger.com">Messenger</button>
+        <button class="launcher-item" data-h="600" data-w="740" data-title="Facebook" data-url="https://www.facebook.com">Facebook</button>
+        <button class="launcher-item" data-h="200" data-w="340" data-title="Lofi Beats" data-url="https://www.youtube.com/embed/jfKfPfyJRdk">Lofi Beats</button>
+        <input type="search" class="search">
+    </div>
+</body>
+<link rel='stylesheet' href='style.css'>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-resizable@1.0.6/resizable.min.js"></script>
+<script src="src/quotes.js"></script>
+<script src="script.js"></script>
+</html>
